@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../image/back.jpg");
+     background-size: cover; 
+    background-position: center; 
+    text-align: center; 
+
+
+  }
+
+
+.jumbotron {
+    font-size: 20px;
+    padding: 10px;
+    background-color: #00c8eb; 
+    background-image: url("../image/bwi.jpg");
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+
+  nav {
+    /* background-color: #00c621; */
+    background: transparent;
+    padding: 2px;
+    top: 0;
+    /* filter: blur(2px); */
+  }
+  nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+  }
+  nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+    margin-top: 15px;
+  }
+
+  
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+
+  nav a:hover {
+    font-weight: bold;
+  }
+
+  .footer {
+    color: white; /* Mengatur warna teks menjadi putih */
+}
+
+.footer a {
+    color: white; /* Mengatur warna tautan menjadi putih */
+}
+.footer ul li a .nav-link {
+  color: white; /* Mengatur warna teks menjadi putih */
+}
+
