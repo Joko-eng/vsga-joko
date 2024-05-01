@@ -31,18 +31,6 @@ $query = "INSERT INTO paket_wisata (nama, paket, tgl_pesan, durasi, jml_orang, p
 
 $sukses = mysqli_query($koneksi, $query);
 
-// if ($sukses) {
-//     echo "Data berhasil disimpan";
-// } else {
-//     echo "Data gagal disimpan" . mysqli_error($koneksi);
-// }
-
-// Ambil data yang baru saja disimpan dari database
-// $query_select = "SELECT * FROM paket_wisata WHERE nama='$nama' AND paket='$paket' AND tgl_pesan='$tgl'";
-// $result = mysqli_query($koneksi, $query_select);
-// $data = mysqli_fetch_assoc($result);
-
-
 
 
 
