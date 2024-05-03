@@ -5,7 +5,6 @@
     font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("../image/back.jpg");
      background-size: cover; 
     background-position: center; 
     text-align: center; 
@@ -47,7 +46,7 @@ nav a {
     font-size: 18px;
     font-weight: 400;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
   }
 
   nav a:hover {
@@ -55,13 +54,12 @@ nav a {
   }
 
   .footer {
-    color: white; /* Mengatur warna teks menjadi putih */
+    color: rgb(0, 0, 0); /* Mengatur warna teks menjadi putih */
 }
 
 .footer a {
-    color: white; /* Mengatur warna tautan menjadi putih */
+    color: rgb(0, 0, 0); /* Mengatur warna tautan menjadi putih */
 }
 .footer ul li a .nav-link {
-  color: white; /* Mengatur warna teks menjadi putih */
+  color: rgb(0, 0, 0); /* Mengatur warna teks menjadi putih */
 }
-

@@ -6,86 +6,75 @@
                 <h6 class="text-uppercase mb-2">Banyuwangi</h6>
                 <p class="mb-4 pb-2">Banyuwangi, sebuah kabupaten yang terletak di ujung timur Pulau Jawa, Indonesia, telah menjadi destinasi wisata yang semakin populer bagi para pelancong yang 
                     mencari pengalaman alam yang autentik dan keunikan budaya. Dengan keindahan alamnya yang memukau,</p>
-                <a href="javascript:;" class="text-white me-xl-4 me-3">
+                <a href="javascript:;" class=" me-xl-4 me-3">
                     <span class="text-lg fab fa-facebook" aria-hidden="true"></span>
                 </a>
-                <a href="javascript:;" class="text-white me-xl-4 me-3">
+                <a href="javascript:;" class=" me-xl-4 me-3">
                     <span class="text-lg fab fa-twitter" aria-hidden="true"></span>
                 </a>
-                <a href="javascript:;" class="text-white me-xl-4 me-3">
+                <a href="javascript:;" class="me-xl-4 me-3">
                     <span class="text-lg fab fa-instagram" aria-hidden="true"></span>
                 </a>
-                <a href="javascript:;" class="text-white me-xl-4 me-3">
+                <a href="javascript:;" class=" me-xl-4 me-3">
                     <span class="text-lg fab fa-pinterest" aria-hidden="true"></span>
                 </a>
-                <a href="javascript:;" class="text-white me-xl-4 me-3">
+                <a href="javascript:;" class=" me-xl-4 me-3">
                     <span class="text-lg fab fa-github" aria-hidden="true"></span>
                 </a>
             </div>
-            <div class="col-md-2 col-6 ms-lg-auto mb-md-0 mb-4">
-                <h6 class="text-sm">Menu</h6>
+            <div class="col-md-3 col-6 ms-lg-auto mb-md-0 mb-4 ms auto">
                 <ul class="flex-column ms-n3 nav">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="javascript:;">Beranda</a>
+                        <a class="nav-link " href="javascript:;">Beranda</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="javascript:;">Pesan Paket</a>
+                        <a class="nav-link " href="javascript:;">Pesan Paket</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="javascript:;">Daftar Pesanan</a>
+                        <a class="nav-link " href="javascript:;">Daftar Pesanan</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="javascript:;">Tentang Kami</a>
+                        <a class="nav-link " href="javascript:;">Tentang Kami</a>
                     </li>
                 </ul>
             </div>
 
-            <div class="col-md-2 col-6 mb-md-0 mb-4">
-                <h6 class="text-sm">Wisata</h6>
+            
+            <div class="col-md-2 col-6 mb-md-0 mb-4 ms auto ">
                 <ul class="flex-column ms-n3 nav">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="javascript:;">Alam</a>
+                        <a class="nav-link "
+                        href="mailto:https://mail.google.com/mail/u/0/?view=cm&amp;tf=1&amp;fs=1&amp;to=rumahkreatif.231@gmail.com">Email</a>
                     </li>
-
+                    
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="javascript:;">Budaya</a>
+                        <a class="nav-link " href=""
+                        target="_blank">Instagram</a>
                     </li>
-
+                    
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="javascript:;">Kesenian</a>
+                        <a class="nav-link " href=""
+                        target="_blank">Tik Tok</a>
                     </li>
-
+                    
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="javascript:;">Budaya</a>
+                        <a class="nav-link " href=""
+                        target="_blank">Google
+                        Maps</a>
                     </li>
                 </ul>
             </div>
-
             <div class="col-md-2 col-6 mb-md-0 mb-4">
-                <h6 class="text-sm">Hubungi</h6>
                 <ul class="flex-column ms-n3 nav">
                     <li class="nav-item">
-                        <a class="nav-link text-white"
-                            href="mailto:https://mail.google.com/mail/u/0/?view=cm&amp;tf=1&amp;fs=1&amp;to=rumahkreatif.231@gmail.com">Email</a>
+                        <a class="nav-link " href="javascript:;">Jl. Brawijaya, Lingkungan Cuking Rw., Mojopanggung, Kec. Giri, Kabupaten Banyuwangi, Jawa Timur 68425</a>
                     </li>
-
+    
                     <li class="nav-item">
-                        <a class="nav-link text-white" href=""
-                            target="_blank">Instagram</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href=""
-                            target="_blank">Tik Tok</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href=""
-                            target="_blank">Google
-                            Maps</a>
+                        <a class="nav-link " href="javascript:;">+033 62183128</a>
                     </li>
                 </ul>
             </div>

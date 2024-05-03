@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JWD</title>
     <!-- My Own Styles -->
-    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
 
@@ -22,18 +22,11 @@
 <div class="jumbotron">
     <div class="container">
         <div class="row">
-            <div class="col-md-1">
-                <img src="assets/image/bwi.png" class="img-fluid" alt="Banyuwangi">
-            </div>
-            <div class="col-md-9">
-                <h1 class="animate__animated animate__fadeInUp">Banyuwangi</h1>
+            <div class="col-md-12">
+                <h1 class="animate__animated animate__fadeInUp">ASTON BANYUWANGI</h1>
                 <p class="animate__animated animate__fadeInUp">
-                    Kabupaten ujung timur dari pulau Jawa, dan sering disebut sebagai Sunrise of Java.
+                    Enjoy your holiday with the Aston Banyuwangi Hotel
                 </p>
-            </div>
-
-            <div class="col-md-2 mt-md-4">
-                <img src="assets/image/wdf.png" class="img-fluid" alt="Banyuwangi">
             </div>
         </div>
     </div>
@@ -41,92 +34,74 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 <script>
-    // function updateHargaPaket(){
-    //     nilai = document.getElementById("nama-paket").value;
-    //   //console.log(nilai);
-    //  alert(nilai);
-    // penginapan = false;
-    // transportasi =false;
-    // konsumsi = false;
-
-
-
-    penginapan = false;
-    transportasi = false;
-    konsumsi = false;
-
-    function updateHargaPaket() {
-        nilai = Number(document.getElementById("nama-paket").value);
-        elementHargaPaket = document.getElementById("harga-paket");
+    function updateHargakamar() {
+        nilai = Number(document.getElementById("nama-kamar").value);
+        elementHargaKamar = document.getElementById("harga-kamar");
         harga = 0;
 
         if (nilai == 1) {
-            harga = 500000;
+            harga = 100000;
         } else if (nilai == 2) {
-            harga = 750000;
+            harga = 200000;
         } else if (nilai == 3) {
-            harga = 1000000;
-        } else if (nilai == 4) {
-            harga = 1250000;
+            harga = 350000;
         }
 
         // console.log(nilai);
         // alert(harga);
-        elementHargaPaket.value = harga;
+        elementHargaKamar.value = harga;
     }
 
-    function handlePenginapan(cb) {
-        penginapan = cb.checked;
-        hl = document.getElementById("harga-layanan");
-        hl.value = hitungLayanan();
-    }
+    function updateDiskon() {
+        dis = Number(document.getElementById("durasi").value);
+        elementDiskon = document.getElementById("diskon");
+        diskonan = 0;
 
-    function handleTransportasi(cb) {
-        transportasi = cb.checked;
-        hl = document.getElementById("harga-layanan");
-        hl.value = hitungLayanan();
-    }
-
-    function handleKonsumsi(cb) {
-        konsumsi = cb.checked;
-        hl = document.getElementById("harga-layanan");
-        hl.value = hitungLayanan();
-    }
-
-    function hitungLayanan() {
-        totalLayanan = 0;
-
-        if (penginapan) {
-            totalLayanan = totalLayanan + 300000;
+        if (dis > 3) {
+            diskonan = 10;
         }
-        if (transportasi) {
-            totalLayanan = totalLayanan + 200000;
-        }
-        if (konsumsi) {
-            totalLayanan = totalLayanan + 150000;
-        }
-        // alert(totalLayanan);
-        return totalLayanan;
+
+        elementDiskon.value = diskonan;
+    }
+
+    function handleBreakfast(cb) {
+        breakfest = cb.checked;
+        hl = document.getElementById("harga-layanan");
+        hl.value = cb.checked ? 80000 : 0;
     }
 
     function hitung() {
+        updateDiskon();
 
-        var hargaPaket = document.getElementById("harga-paket").value; // Misalkan hargaPaket diambil dari elemen dengan ID "harga-paket"
-        var jumlahPeserta = document.getElementById("jumlah-orang").value;
+        var hargaKamar = document.getElementById("harga-kamar").value; // ID "harga-kamar"
         var hargaLayanan = document.getElementById("harga-layanan").value;
         var hari = document.getElementById("durasi").value;
 
-        // Pastikan konversi ke integer berhasil, jika tidak, default ke 0
-        hargaPaket = parseInt(hargaPaket) || 0;
-        jumlahPeserta = parseInt(jumlahPeserta) || 0;
+        hargaKamar = parseInt(hargaKamar) || 0;
         hargaLayanan = parseInt(hargaLayanan) || 0;
         hari = parseInt(hari) || 0;
 
-        var jumlahTagihan = (hargaPaket * jumlahPeserta) + (hargaLayanan * jumlahPeserta * hari);
+        var jumlah = hargaKamar * hari;
+        if (hari > 3) {
+            var diskon = jumlah * 0.1;
+            jumlah -= diskon;
+        }
 
+
+        var jumlahLayanan = hargaLayanan * hari;
+        var jumlahTagihan = jumlah + jumlahLayanan 
+        //lama menginap lebih dari 3 hari diskom
+
+        //tampilkan diskon saat form pemesanan
+        //
+
+        document.getElementById("total-diskon").value = diskon;
+        document.getElementById("total-harga-kamar").value = jumlah;
+        document.getElementById("total-layanan").value = jumlahLayanan;
         document.getElementById("total-pembayaran").value = jumlahTagihan;
 
     }
+
 </script>
 
 </html>

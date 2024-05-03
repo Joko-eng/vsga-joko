@@ -8,7 +8,7 @@
                 <a href="pesan.php">Pesan Paket</a>
             </li>
             <li>
-                <a href="daftarPesanan.php">Daftar Pesanan</a>
+                <a href="daftarHarga.php">Daftar Harga</a>
             </li>
             <li>
                 <a href="tentangKami.php">Tentang Kami</a>
